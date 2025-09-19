@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sidra's Portfolio Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6f9;
+    }
+    header {
+      background: #6c63ff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #4b47d1;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 { color: #333; margin-bottom: 20px; }
+    .form-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px;
+      width: 100%;
+      border: none;
+      background: #6c63ff;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #5145cd;
+    }
+    footer {
+      background: #4b47d1;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sidra Tul Muntaha</h1>
+    <p>My Basic Web Forms Portfolio</p>
+  </header>
+
+  <nav>
+    <a href="#contact">Contact</a>
+    <a href="#internship">Internship Application</a>
+    <a href="#login">Login</a>
+  </nav>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Form</h2>
+    <div class="form-box">
+      <form>
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Internship Form -->
+  <section id="internship">
+    <h2>Internship Application Form</h2>
+    <div class="form-box">
+      <form>
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>University</label>
+        <input type="text" name="university" required>
+
+        <label>Semester</label>
+        <select name="semester">
+          <option>1st</option>
+          <option>2nd</option>
+          <option selected>3rd</option>
+          <option>4th</option>
+        </select>
+
+        <label>Skills</label>
+        <input type="text" name="skills" placeholder="Java, HTML, Networking">
+
+        <label>Why should we hire you?</label>
+        <textarea name="why" rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Login Form -->
+  <section id="login">
+    <h2>Login Form</h2>
+    <div class="form-box">
+      <form>
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sidra Tul Muntaha | Portfolio Forms Project</p>
+  </footer>
+</body>
+</html>
